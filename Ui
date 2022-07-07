@@ -47,7 +47,7 @@ end)
 
 function library:Create(class, properties)
     properties = typeof(properties) == "table" and properties or {}
-    local inst = Instance.new('Ender Server')
+    local inst = Instance.new('EnderServer')
     for property, value in next, properties do
         inst[property] = value
     end
